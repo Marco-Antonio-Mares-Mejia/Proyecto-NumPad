@@ -25,7 +25,7 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Crystal_GND3_Small X1
+L Device:Crystal_GND24_Small X1
 U 1 1 60E56407
 P 1100 1650
 F 0 "X1" H 1100 1800 50  0000 C CNN
@@ -76,8 +76,6 @@ Wire Wire Line
 	900  1850 1100 1850
 Wire Wire Line
 	1100 1850 1100 1900
-Wire Wire Line
-	1300 1850 1100 1850
 Connection ~ 1100 1850
 Wire Wire Line
 	1100 1750 1100 1850
@@ -88,10 +86,6 @@ Wire Wire Line
 Wire Wire Line
 	1450 1750 1550 1750
 Connection ~ 1300 1650
-Wire Wire Line
-	900  1650 900  1550
-Wire Wire Line
-	900  1550 1550 1550
 Connection ~ 900  1650
 Wire Notes Line style solid rgb(132, 0, 0)
 	450  5050 4350 5050
@@ -1199,4 +1193,19 @@ F 3 "" H 1450 2150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1450 2150 1550 2150
+Wire Wire Line
+	900  1500 1550 1500
+Wire Wire Line
+	1550 1500 1550 1550
+Wire Wire Line
+	900  1500 900  1650
+Wire Wire Line
+	1100 1850 1300 1850
+Wire Wire Line
+	1100 1550 700  1550
+Wire Wire Line
+	700  1550 700  1900
+Wire Wire Line
+	700  1900 1100 1900
+Connection ~ 1100 1900
 $EndSCHEMATC
