@@ -283,17 +283,6 @@ F 3 "" H 3150 3450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3150 3450 3050 3450
-$Comp
-L Connector:USB_B_Micro J1
-U 1 1 60E84409
-P 1100 5800
-F 0 "J1" H 1157 6267 50  0000 C CNN
-F 1 "USB_B_Micro" H 1157 6176 50  0000 C CNN
-F 2 "keyboard_parts:USB_microB" H 1250 5750 50  0001 C CNN
-F 3 "~" H 1250 5750 50  0001 C CNN
-	1    1100 5800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1400 5600 1650 5600
 Text Label 1650 5600 0    59   ~ 0
@@ -759,16 +748,6 @@ Wire Wire Line
 	2750 4050 2900 4050
 Wire Wire Line
 	2750 4150 2900 4150
-Text Label 2900 3750 0    50   ~ 0
-row1
-Text Label 2900 3850 0    50   ~ 0
-row2
-Text Label 2900 3950 0    50   ~ 0
-row3
-Text Label 2900 4050 0    50   ~ 0
-row4
-Text Label 2900 4150 0    50   ~ 0
-row5
 Wire Wire Line
 	2750 2550 2950 2550
 Wire Wire Line
@@ -777,14 +756,6 @@ Wire Wire Line
 	2750 2750 2950 2750
 Wire Wire Line
 	2750 2850 2950 2850
-Text Label 2950 2550 0    50   ~ 0
-col1
-Text Label 2950 2650 0    50   ~ 0
-col2
-Text Label 2950 2750 0    50   ~ 0
-col3
-Text Label 2950 2850 0    50   ~ 0
-col4
 NoConn ~ 2750 4250
 NoConn ~ 2750 3550
 NoConn ~ 2750 3250
@@ -1118,4 +1089,35 @@ Wire Wire Line
 Wire Wire Line
 	7050 5350 6000 5350
 Connection ~ 6000 5350
+Text GLabel 2950 2550 2    50   Input ~ 0
+col1
+Text GLabel 2950 2650 2    50   Input ~ 0
+col2
+Text GLabel 2950 2750 2    50   Input ~ 0
+col3
+Text GLabel 2950 2850 2    50   Input ~ 0
+col4
+Text GLabel 2900 3750 2    50   Input ~ 0
+row1
+Text GLabel 2900 3850 2    50   Input ~ 0
+row2
+Text GLabel 2900 3950 2    50   Input ~ 0
+row3
+Text GLabel 2900 4050 2    50   Input ~ 0
+row4
+Text GLabel 2900 4150 2    50   Input ~ 0
+row5
+$Comp
+L Connector:USB_B_Micro J1
+U 1 1 60E84409
+P 1100 5800
+F 0 "J1" H 1157 6267 50  0000 C CNN
+F 1 "USB_B_Micro" H 1157 6176 50  0000 C CNN
+F 2 "keyboard_parts:USB_microB" H 1250 5750 50  0001 C CNN
+F 3 "~" H 1250 5750 50  0001 C CNN
+	1    1100 5800
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1400 6000
+NoConn ~ 1550 1950
 $EndSCHEMATC
