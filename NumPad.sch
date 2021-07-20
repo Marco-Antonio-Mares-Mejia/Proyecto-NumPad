@@ -338,18 +338,10 @@ Wire Wire Line
 	1750 5800 1900 5800
 Wire Wire Line
 	1750 5900 1900 5900
-Text Label 1900 5800 0    59   ~ 0
-D+
-Text Label 1900 5900 0    59   ~ 0
-D-
 Wire Wire Line
 	1550 2350 1350 2350
 Wire Wire Line
 	1550 2450 1350 2450
-Text Label 1350 2350 2    59   ~ 0
-D+
-Text Label 1350 2450 2    59   ~ 0
-D-
 $Comp
 L power:GND #PWR0108
 U 1 1 60E9B291
@@ -836,10 +828,6 @@ Wire Wire Line
 Text GLabel 6750 1000 1    50   Input ~ 0
 col1
 Wire Wire Line
-	5950 1250 5950 1200
-Wire Wire Line
-	5950 1200 6100 1200
-Wire Wire Line
 	5950 1550 5700 1550
 Text GLabel 5700 1550 0    50   Input ~ 0
 row1
@@ -859,9 +847,6 @@ Wire Wire Line
 Wire Wire Line
 	6750 2100 6750 1200
 Connection ~ 6750 1200
-Connection ~ 6100 1200
-Wire Wire Line
-	6100 1200 6150 1200
 Wire Wire Line
 	6700 1200 6750 1200
 $Comp
@@ -884,26 +869,14 @@ Wire Wire Line
 Text GLabel 5700 2450 0    50   Input ~ 0
 row2
 Wire Wire Line
-	7050 1250 7050 1200
-Wire Wire Line
-	7050 1200 7150 1200
-Wire Wire Line
 	7050 1550 5950 1550
 Connection ~ 5950 1550
 Wire Wire Line
 	8050 1550 7050 1550
 Connection ~ 7050 1550
 Wire Wire Line
-	8050 1250 8050 1200
-Wire Wire Line
-	8050 1200 8150 1200
-Wire Wire Line
 	9100 1550 8050 1550
 Connection ~ 8050 1550
-Wire Wire Line
-	9100 1250 9100 1200
-Wire Wire Line
-	9100 1200 9200 1200
 Wire Wire Line
 	8800 1200 8800 950 
 Wire Wire Line
@@ -919,15 +892,6 @@ Wire Wire Line
 Connection ~ 5950 2450
 Wire Wire Line
 	7050 2150 7050 2100
-Connection ~ 7150 1200
-Wire Wire Line
-	7150 1200 7200 1200
-Connection ~ 8150 1200
-Wire Wire Line
-	8150 1200 8200 1200
-Connection ~ 9200 1200
-Wire Wire Line
-	9200 1200 9250 1200
 Wire Wire Line
 	8800 1200 8750 1200
 Wire Wire Line
@@ -1120,4 +1084,32 @@ F 3 "~" H 1250 5750 50  0001 C CNN
 $EndComp
 NoConn ~ 1400 6000
 NoConn ~ 1550 1950
+Text Label 1350 2450 2    59   ~ 0
+D-
+Text Label 1350 2350 2    59   ~ 0
+D+
+Text Label 1900 5900 0    59   ~ 0
+D-
+Text Label 1900 5800 0    59   ~ 0
+D+
+Text GLabel 1450 5800 1    50   Input ~ 0
+DP
+Text GLabel 1450 5900 3    50   Input ~ 0
+DN
+Wire Wire Line
+	5950 1250 5950 1200
+Wire Wire Line
+	5950 1200 6100 1200
+Wire Wire Line
+	7050 1250 7050 1200
+Wire Wire Line
+	7050 1200 7150 1200
+Wire Wire Line
+	8050 1250 8050 1200
+Wire Wire Line
+	8050 1200 8150 1200
+Wire Wire Line
+	9100 1250 9100 1200
+Wire Wire Line
+	9100 1200 9200 1200
 $EndSCHEMATC
